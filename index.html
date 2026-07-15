@@ -192,7 +192,7 @@
                         </div>
                         <div class="overflow-hidden">
                             <p class="text-sm font-medium text-white truncate" id="sidebar-user-name">Admin</p>
-                            <p class="text-[10px] text-brand-300" id="sidebar-user-role">Guru Bimbingan</p>
+                            <p class="text-[10px] text-brand-300" id="sidebar-user-role">Guru</p>
                         </div>
                     </div>
                     <button onclick="handleLogout()" class="text-brand-300 hover:text-white hover:bg-red-500/20 p-2 rounded-lg transition-colors flex-shrink-0" title="Keluar">
@@ -473,7 +473,7 @@
                     <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
                         <div>
                             <h2 class="text-2xl font-bold text-slate-800">Data Guru</h2>
-                            <p class="text-slate-500 text-sm mt-1">Manajemen akun guru bimbingan & admin.</p>
+                            <p class="text-slate-500 text-sm mt-1">Manajemen akun Guru & admin.</p>
                         </div>
                         <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
                             <div class="relative w-full sm:w-64">
@@ -653,7 +653,7 @@
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Peran / Akses <span class="text-red-500">*</span></label>
                         <select id="new-teacher-role" class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 outline-none" required>
-                            <option value="Guru">Guru Bimbingan (Akses Terbatas)</option>
+                            <option value="Guru">Guru (Akses Terbatas)</option>
                             <option value="Admin">Administrator (Akses Penuh)</option>
                         </select>
                     </div>
@@ -897,7 +897,7 @@
                 }
                 
                 document.getElementById('sidebar-user-name').textContent = fullName;
-                document.getElementById('sidebar-user-role').textContent = userRole === 'Admin' ? 'Administrator' : 'Guru Bimbingan';
+                document.getElementById('sidebar-user-role').textContent = userRole === 'Admin' ? 'Administrator' : 'Guru';
 
                 showApp();
             } else {
